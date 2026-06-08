@@ -1,0 +1,30 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/SoumyaNagaraj06/jenkins-demo.git'
+            }
+        }
+
+        stage('Read File') {
+            steps {
+                sh 'cat jenkins.txt'
+            }
+        }
+
+        stage('Create File') {
+            steps {
+                sh 'echo "Created by Jenkins" > output.txt'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline executed successfully!'
+        }
+    }
+}
