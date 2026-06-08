@@ -5,3 +5,4 @@ Extensibility: Over 1,800+ plugins to integrate with various tools like Docker, 
 Technology Agnostic: Supports multiple programming languages and tech stacks, including Java, Python, JavaScript, and more.
 Ease of Setup: Provides a user-friendly web-based GUI for configuration.
 Master-Slave Architecture: Enables distributed builds for improved performance and scalability.
+key_features_of_jenkins.webp
